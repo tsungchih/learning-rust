@@ -1,0 +1,9 @@
+# Cargo.toml
+[workspace]
+members = [
+    "learn-collections",
+    "learn-enum",
+    "learn-hyper",
+    "learn-struct",
+    "ownership",
+]
