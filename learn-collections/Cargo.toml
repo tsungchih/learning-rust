@@ -1,0 +1,14 @@
+[package]
+name = "learn-collections"
+version = "0.1.0"
+authors = ["tsungchih"]
+edition = "2018"
+
+[dev-dependencies]
+cucumber = { package = "cucumber_rust", version = "^0.6.0" }
+
+[dependencies]
+
+[[test]]
+name = "cucumber"
+harness = false
