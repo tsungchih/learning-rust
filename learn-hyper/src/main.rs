@@ -3,7 +3,7 @@ extern crate pretty_env_logger;
 #[macro_use] extern crate log;
 
 use hyper::{Body, Server, Request, Response};
-use hyper::rt::{self, Future};
+use hyper::rt::Future;
 use hyper::service::service_fn_ok;
 
 fn main() {
@@ -19,6 +19,6 @@ fn main() {
         })
         .map_err(|e| eprintln!("server error {}", e));
 
-    rt::run(server);
+    hyper::rt::run(server);
     info!("The Server is running now.")
 }
